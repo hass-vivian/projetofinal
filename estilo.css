@@ -63,8 +63,8 @@ ul {
 }
 
 .icon_foto {
-    width: 8.0em;
-    border-radius: 40%;
+    width: 10em;
+    border-radius: 20%;
 }
 
 .secao_imagens {
@@ -220,6 +220,10 @@ section {
     .header_nav a:hover {
         background-color: #a02b77;
     }
+
+    /* .div_foto{
+
+    } */
 
     #sobre {
         display: flex;
