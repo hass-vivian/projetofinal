@@ -2,6 +2,7 @@
     --cor-site: #000000;
     --cor-fundo: #ffffff;
     --cor-principal: #f16ec6;
+
 }
 
 * {
@@ -11,6 +12,7 @@
     box-sizing: border-box;
 }
 
+/* Cabeçalho Menu */
 .header {
     text-align: start;
     margin: auto;
@@ -27,8 +29,8 @@
     background-color: #f16ec6;
     color: #0D0D0D;
     display: block;
-    text-align: start;
-    /* coloquei "start" para que o menu fique a esquerda */
+    text-align: center;
+    /* para o menu iniciar no centro*/
     padding: 0;
     cursor: pointer;
     font-size: 2em;
@@ -67,22 +69,76 @@ ul {
     color: #ffffff;
 }
 
-.icon_foto {
+
+/* Ajustar as sections no site */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+    gap: 5em;
+    margin: .8em;
+    padding: 1.2em;
+}
+
+
+/* Ajuste das imagens de perfil */
+.div_foto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* height: 100vh; fez ficar muito afastado do menu*/
+}
+
+.div_foto img {
+    width: 15em;
+    height: auto;
+    border-radius: 20%;
+    box-shadow: 0 0 15px #057d92;
+}
+
+
+
+
+/* Ajustes dos Cards - Section - Projetos */
+.card:hover {
+    transform: scale(1.05);
+    transition: transform 0.5s ease-in-out;
+}
+
+.card {
+    transform: scale(1);
+    transition: transform 0.5s ease-in-out;
+}
+
+.card-body {
+    text-align: justify;
+}
+
+.card-img-top {
+    height: 200px;
+    /* Definir a altura da iamgem do card */
+    object-fit: cover;
+    /* Para evitar distorção da imagem */
+}
+
+
+
+
+
+
+
+/* .icon_foto {
     width: 10em;
     border-radius: 20%;
 }
 
+main section{
+    text-align: justify;
+}
 .secao_imagens {
     margin: 0;
     font-family: sans-serif;
-}
-
-.div_container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1em;
-    text-align: center;
 }
 
 .div_card {
@@ -90,15 +146,15 @@ ul {
     flex-direction: column;
     align-items: center;
     /* gap: 4em; */
-    margin: .8em;
+/* margin: .8em;
     padding: 1.2em;
     box-shadow: 2px 2px 16px 0px rgba(0, 0, 0, 0.1);
     border-radius: 15px;
     background-color: #f7c9e7;
     transition: all 0.5s ease;
-}
+} */
 
-
+/* 
 h2 {
     text-align: center;
     text-transform: uppercase;
@@ -106,15 +162,6 @@ h2 {
     margin: .1em;
     padding: .35em;
     border-radius: .5em;
-}
-
-main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 5em;
-    margin: .8em;
-    padding: 1.2em;
 }
 
 
@@ -128,24 +175,40 @@ section {
     width: 5.5vh;
     margin: .5em;
     /* width: 100%; */
+/* } */
+/* 
+.row{
+    align-items: center;
 }
 
-
-.div_card:hover {
+.card:hover {
     transform: scale(1.1);
     transition: transform 0.5s ease-in-out;
 }
 
-.div_card {
+.card {
     transform: scale(1);
     transition: transform 0.5s ease-in-out;
 }
+.card-body{
+    text-align: justify;
+    gap: 10em;
+}
 
-.div_card a {
+/* .card-body a {
     text-decoration: none;
-    color: #a02b77;
+    background-color: var(--cor-fundo);
+    color: var(--cor-principal);
+    border:var(--cor-fundo)
     font: bold;
 }
+
+.card-body a:hover {
+    background-color: var(--cor-principal);
+    color: #000000;
+    font: bold;
+}
+
 
 .video_botao {
     display: flex;
@@ -154,7 +217,7 @@ section {
     align-content: center;
     margin: 2em;
     padding: .35em;
-    background-color: #f16ec6;
+    background-color: rgb(241, 110, 198);
     border-radius: 8px;
     text-decoration: none;
     color: #ffffff;
@@ -178,69 +241,35 @@ section {
     align-items: center;
     flex-direction: column;
     /* gap: 2em; */
-    margin-bottom: 2em;
-}
-
-#area {
-    position: relative;
-    left: 37%;
-    top: 10em;
-    width: 320px;
-    height: 270px;
-}
-
-#area #formulario {
-    position: absolute;
-    display: block;
-}
-
-
-fieldset {
-    background-color: #A7C0DC;
-    width: 300px;
-    height: 250px;
-}
-
-legend {
-    font-weight: bold;
-    font-family: "Segoe UI", "Arial", "Times New Roman";
-}
-
-/* #formulario label {
-    position: absolute;
-    left: 19px;
-    margin-right: 5px;
-}
-
-#formulario input.campo_nome {
-    background-color: #f1ff00;
-    position: absolute;
-    left: 95px;
-    top: 23px;
-    width: 225px;
-}
-
-#formulario input.campo_email {
-    background-color: #f1ff00;
-    position: absolute;
-    left: 95px;
-    margin-top: 2px;
-    width: 225px;
-}
-
-#formulario textarea.msg {
-    position: absolute;
-    background-color: #f1ff00;
-}
-
-
-#formulario input.btn_submit {
-    border-style: dashed;
-    position: absolute;
-    bottom: 0.5em;
-    right: 10px;
-    background-color: #f1ff00;
+/* margin-bottom: 2em;
 } */
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+label,
+input,
+textarea {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: var(--cor-site);
+    color: var(--cor-fundo);
+    border-color: var(--cor-principal);
+    cursor: pointer;
+}
+
 
 @media screen and (min-width: 48em) {
     /*768px maior que*/
@@ -285,13 +314,10 @@ legend {
         background-color: #a02b77;
     }
 
-    /* .div_foto{
-
-    } */
-
     #sobre {
-        display: flex;
-        justify-content: flex-start;
+        display: inline-block;
+        /* display: flex;
+        justify-content: flex-start; */
     }
 
     .div_card {
@@ -353,3 +379,5 @@ footer {
     }
 
 }
+
+#057d92
