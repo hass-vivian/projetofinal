@@ -67,7 +67,7 @@
                 <img class="icon_foto" src="imagens/foto perfilo opção 3.png" alt="foto do autor">
             </div>
             <div content-1>
-                <h2>Sobre mim</h2>
+                <h3>Sobre mim</h3>
                 <br>
                 <p> Vívian Hass, 36 anos, casada e mãe de dois filhos lindos.
                     A origem da minha família é simples, com meus pais tendo sido criados no interior, lidando com
@@ -89,7 +89,7 @@
         </section>
 
         <section id="inicio">
-            <h2>O início</h2>
+            <h3>O início</h3>
             <br>
             <p> Certo dia, conversando com uma colega de trabalho, ela me inspirou ao compartilhar sua experiência de
                 ingressar na faculdade, o que me fez perceber que não era algo inalcançável. A partir daí, comecei a
@@ -103,7 +103,7 @@
         </section>
 
         <section id="superacao">
-            <h2>Superações</h2>
+            <h3>Superações</h3>
             <br>
             <p> Superação é uma qualidade que nasceu comigo!
                 Casei-me jovem, aos 17 anos, tive um filho e me separarei quando ele tinha apenas 1 ano e meio. Além
@@ -121,7 +121,7 @@
         </section>
 
         <section id="conquistas">
-            <h2>Conquistas</h2>
+            <h3>Conquistas</h3>
             <br>
             <p> No vasto e empolgante ambiente da programação, existem inúmeras conquistas a serem realizadas. Cada
                 linha de código escrita representa uma oportunidade de criar algo novo, resolver problemas complexos e
@@ -154,7 +154,7 @@
         </section>
 
         <section id="aprendizado">
-            <h2>Aprendizado</h2>
+            <h3>Aprendizado</h3>
             <br>
             <p> Participar deste curso foi uma jornada transformadora, desde o início a cada etapa que foi
                 minuciosamente abordada.
@@ -189,7 +189,7 @@
         </section>
 
         <section id="projetos" class="secao_imagens">
-            <h2>Projetos</h2>
+            <h3>Projetos</h3>
             <br>
             <p>Os projetos que listei aqui, são evidências tangíveis do meu progresso nessa jornada em direção ao
                 desconhecido, que agora se torna uma fonte de descobertas apaixonantes. Cada passo dado e cada desafio
@@ -314,33 +314,37 @@
         </section>
 
         <section id="depoimento">
-            <h2>Depoimento</h2>
+            <h3>Depoimento</h3>
             <br>
             <p>Como foi minha experiência? Vou te contar...
             </p>
             <div class="div_video" class="video_tamanho">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/2BjQcF-27Cw"
-                    title="Vídeo Institucional - Junior Achievement" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen></iframe>
+                <iframe width="1271" height="715" src="https://www.youtube.com/embed/yd6Lwq3Hrqg" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
             <a href="https://youtu.be/2BjQcF-27Cw" target="_blank" class="video_botao">Ver Depoimento</a>
         </section>
 
         <section id="contato">
-            <h2>Entre em Contato</h2>
+            <h3>Entre em Contato</h3>
             <br>
+
             <form>
-                <label for="nome">Nome:</label>
-                <input type="text" id="nome" name="nome" required>
-
-                <label for="email">E-mail:</label>
-                <input type="email" id="email" name="email" required>
-
-                <label for="mensagem">Mensagem:</label>
-                <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
-
-                <button type="submit">Enviar</button>
+                <div class="form-group">
+                    <label for="Nome">Nome</label>
+                    <input type="Nome" class="form-control" id="Nome" aria-describedby="NomeHelp"
+                        placeholder="Seu Nome">
+                    <small id="NomeHelp" class="form-text text-muted">Nunca vamos compartilhar seu email, com
+                        ninguém.</small>
+                </div>
+                <div class="form-group">
+                    <label for="email1">E-mail</label>
+                    <input type="email" class="form-control" id="email1" placeholder="e-mail">
+                </div>
+                <div class="form-group form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Clique em mim</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar</button>
             </form>
 
             </div>

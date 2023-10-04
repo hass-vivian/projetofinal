@@ -18,9 +18,29 @@ body {
     background-repeat: repeat;
 }
 
+/* Ajustar as sections no site */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+    gap: 5em;
+    margin: .8em;
+    padding: 1.2em;
+}
+
+h3 {
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    /* color: #f16ec6; */
+    background-color: var(--cor-principal);
+    border-radius: 1em;
+}
+
 /* Cabeçalho Menu */
 .header {
-    text-align: start;
+    text-align: center;
     margin: auto;
     padding: 0;
     background-color: #0D0D0D;
@@ -76,30 +96,15 @@ ul {
 }
 
 
-/* Ajustar as sections no site */
-main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: justify;
-    gap: 5em;
-    margin: .8em;
-    padding: 1.2em;
-}
-
-h2 {
-    text-align: center;
-    text-transform: uppercase;
-    border-radius: 1em;
-}
-
 
 /* Ajuste das imagens de perfil */
 .div_foto {
     display: flex;
     align-items: center;
     justify-content: center;
-    /* height: 100vh;*/
+    width: 100vh;
+    height: auto;
+
     /* fez ficar muito afastado do menu */
 }
 
@@ -271,7 +276,7 @@ button {
 }
 
 /* Botão de voltar ao Topo */
-.back-to-top {
+/* .back-to-top {
     background: #fff;
     cursor: pointer;
     position: fixed;
@@ -288,14 +293,13 @@ button {
     visibility: visible;
     opacity: 1;
     transform: translateY(0);
-}
+} */
 
 
 
 /* Ajustes do footer */
 footer {
-    background-color: var(--cor-principal);
-    margin: 0;
+    background-color: #f16ec6;
     padding: 1em;
     text-align: center;
 }
@@ -310,8 +314,9 @@ footer {
     width: 2em;
 }
 
-.credito_imagem {
-    font-size: 0.3em;
+.credito_imagem a {
+    font-size: 0.4em;
+    text-decoration: none;
 }
 
 .texto_footer {
