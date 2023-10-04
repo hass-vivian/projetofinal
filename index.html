@@ -8,6 +8,8 @@
     <link rel="shortcut icon" href="imagens/Bonequinha1.ico" type="image/x-icon">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="estilo.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -21,6 +23,10 @@
         <span id="hamburguer" class="material-symbols-rounded">
             menu
         </span>
+        <!-- <span class="material-symbols-outlined">
+            expand_less
+        </span> -->
+        <!-- <a href="#topo" class="material-symbols-outlined"></a> -->
 
         <nav id="itens_menu" class="header_nav">
             <ul>
@@ -48,6 +54,9 @@
                 <li>
                     <a href="#contato" class="scrollsuave">Contato</a>
                 </li>
+                <li>
+                    <!-- <a href="#topo" class="scrollsuave"></a> -->
+                </li>
             </ul>
         </nav>
     </header>
@@ -57,21 +66,25 @@
             <div class="div_foto">
                 <img class="icon_foto" src="imagens/foto perfilo opção 3.png" alt="foto do autor">
             </div>
-            <h2>Sobre mim</h2>
-            <br>
-            <p> Vívian Hass, 36 anos, casada e mãe de dois filhos lindos.
-                A origem da minha família é simples, com meus pais tendo sido criados no interior, lidando com
-                atividades agrícolas e estudando até a quarta série. Minha mãe trabalha como auxiliar de serviços gerais
-                e meu pai é pedreiro. Sou a irmã do meio, com mais dois irmãos.
+            <div content-1>
+                <h2>Sobre mim</h2>
+                <br>
+                <p> Vívian Hass, 36 anos, casada e mãe de dois filhos lindos.
+                    A origem da minha família é simples, com meus pais tendo sido criados no interior, lidando com
+                    atividades agrícolas e estudando até a quarta série. Minha mãe trabalha como auxiliar de serviços
+                    gerais
+                    e meu pai é pedreiro. Sou a irmã do meio, com mais dois irmãos.
 
-                Durante mais de 15 anos da minha vida, trabalhei como diarista e empregada doméstica, mas sempre
-                carreguei o sonho de ser contadora e trabalhar na área de finanças. Sempre fui uma pessoa polivalente,
-                ativa e apaixonada por aprender coisas novas. Minha personalidade extrovertida me faz buscar
-                constantemente formas de ser útil e ajudar meus colegas da melhor maneira possível.
+                    Durante mais de 15 anos da minha vida, trabalhei como diarista e empregada doméstica, mas sempre
+                    carreguei o sonho de ser contadora e trabalhar na área de finanças. Sempre fui uma pessoa
+                    polivalente,
+                    ativa e apaixonada por aprender coisas novas. Minha personalidade extrovertida me faz buscar
+                    constantemente formas de ser útil e ajudar meus colegas da melhor maneira possível.
 
-                Acredito firmemente que uma boa equipe é construída por indivíduos com diferentes qualidades e
-                competências, mas que compartilham um objetivo em comum. É essa visão de colaboração e trabalho em
-                equipe que me impulsiona a buscar constantemente o crescimento pessoal e profissional.</p>
+                    Acredito firmemente que uma boa equipe é construída por indivíduos com diferentes qualidades e
+                    competências, mas que compartilham um objetivo em comum. É essa visão de colaboração e trabalho em
+                    equipe que me impulsiona a buscar constantemente o crescimento pessoal e profissional.</p>
+            </div>
 
         </section>
 
@@ -317,7 +330,6 @@
         <section id="contato">
             <h2>Entre em Contato</h2>
             <br>
-            <!-- <div id="area"> -->
             <form>
                 <label for="nome">Nome:</label>
                 <input type="text" id="nome" name="nome" required>
@@ -335,80 +347,99 @@
 
         </section>
 
-    </main>
 
-    <div class="Whatsapp">
-        <a href="https://wa.me//5547988337348?text=Vi%20seu%20site%20e%20tenho%20interesse%20em%20solicitar%20um%20orçamento"
-            target="_blank">
-            <img src="imagens/whatsapp-logo.png" width="70" alt="Fale conosco pelo WhatsApp" title="" />
-        </a>
-    </div>
 
-    <footer>
-        <div class="logos_footer">
-            <div>
-                <a href="https://www.facebook.com/vivian.l.s.hass?mibextid=ZbWKwL" Alt="facebook" target="_blank">
-                    <img src="imagens/facebook_6422199.png" alt="<a href="
-                        https://www.freepik.com/search?format=search&freeSvg=free&last_filter=query&last_value=facebook&query=facebook&type=icon
-                        class="tamanho"></a>
-                </a>
+        <footer>
+            <div class="logos_footer">
+                <div>
+                    <a href="https://wa.me//5547988337348?text=Vi%20seu%20site%20e%20tenho%20interesse%20em%20solicitar%20um%20orçamento"
+                        target="_blank">
+                        <img src="imagens/whatsapp-logo.png" width="70" alt="Fale conosco pelo WhatsApp" title=""
+                            class="tamanho" />
+                    </a>
+                </div>
+                <div>
+                    <a href="https://www.facebook.com/vivian.l.s.hass?mibextid=ZbWKwL" Alt="facebook" target="_blank">
+                        <img src="imagens/facebook_6422199.png" alt="<a href="
+                            https://www.freepik.com/search?format=search&freeSvg=free&last_filter=query&last_value=facebook&query=facebook&type=icon
+                            class="tamanho"></a>
+                    </a>
+                </div>
+                <div>
+                    <a href="github" Alt="github" target="_blank">
+                        <img src="imagens/github_733609.png" alt="< href="
+                            https://br.freepik.com/icone/github_733609#term=github&page=1&track=ais"
+                            class="tamanho"></a>
+                    </a>
+                </div>
+                <div>
+                    <a href="https://instagram.com/vivian.hass.aux?igshid=NzZlODBkYWE4Ng==" Alt="instagram"
+                        target="_blank">
+                        <img src="imagens/instagram_6422200.png" alt="<a href="
+                            https://www.freepik.com/search?format=search&freeSvg=free&last_filter=query&last_value=facebook&query=facebook&type=icon
+                            class="tamanho"></a>
+                    </a>
+                </div>
+                <div>
+                    <a href="https://www.linkedin.com/in/vivian-laemmel-schulze-hass-304bb5210" Alt="linkeding"
+                        target="_blank"><img src="imagens/linkedin_6422202.png" alt="<a href="
+                            https://www.freepik.com/search?format=search&freeSvg=free&last_filter=query&last_value=linkedin&query=linkedin&type=icon
+                            class="tamanho"></a>
+                    </a>
+                </div>
             </div>
-            <div>
-                <a href="github" Alt="github" target="_blank">
-                    <img src="imagens/github_733609.png" alt="< href="
-                        https://br.freepik.com/icone/github_733609#term=github&page=1&track=ais" class="tamanho"></a>
-                </a>
-            </div>
-            <div>
-                <a href="https://instagram.com/vivian.hass.aux?igshid=NzZlODBkYWE4Ng==" Alt="instagram" target="_blank">
-                    <img src="imagens/instagram_6422200.png" alt="<a href="
-                        https://www.freepik.com/search?format=search&freeSvg=free&last_filter=query&last_value=facebook&query=facebook&type=icon
-                        class="tamanho"></a>
-                </a>
-            </div>
-            <div>
-                <a href="https://www.linkedin.com/in/vivian-laemmel-schulze-hass-304bb5210" Alt="linkeding"
-                    target="_blank"><img src="imagens/linkedin_6422202.png" alt="<a href="
-                        https://www.freepik.com/search?format=search&freeSvg=free&last_filter=query&last_value=linkedin&query=linkedin&type=icon
-                        class="tamanho"></a>
-                </a>
-            </div>
+
+            <p class="texto_footer">
+                Vívian Hass - Elas na Tech 2023 ♥
+            </p>
             <div class="credito_imagem">
                 <p>Crédito das imagens</p>
-                <a href="https://br.freepik.com/vetores-gratis/fundo-detalhado-da-textura-da-aquarela-com-splats-e-manchas_35429106.htm#page=6&query=textura%20pintura%20ciano&position=16&from_view=search&track=ais" target="_blank">Imagem de kjpargeter no Freepik</a>
-                <a href="https://br.freepik.com/vetores-gratis/fundo-azul-aquarela_6167075.htm#query=brush%20ciano&position=0&from_view=search&track=ais" target="_blank">Imagem de alicia_mb no Freepik</a>
+                <a href="https://br.freepik.com/vetores-gratis/fundo-detalhado-da-textura-da-aquarela-com-splats-e-manchas_35429106.htm#page=6&query=textura%20pintura%20ciano&position=16&from_view=search&track=ais"
+                    target="_blank">Imagem de kjpargeter no Freepik</a>
+                <a href="https://br.freepik.com/vetores-gratis/fundo-azul-aquarela_6167075.htm#query=brush%20ciano&position=0&from_view=search&track=ais"
+                    target="_blank">Imagem de alicia_mb no Freepik</a>
             </div>
-        </div>
-        <p class="texto_footer">
-            Vívian Hass - Elas na Tech 2023 ♥
-        </p>
-    </footer>
+        </footer>
 
-    <script>
+        <script>
 
-        var hamburguer = document.getElementById('hamburguer');
-        var itens_menu = document.getElementById('itens_menu');
+            var hamburguer = document.getElementById('hamburguer');
+            var itens_menu = document.getElementById('itens_menu');
 
-        hamburguer.addEventListener('click', aparecer);
+            hamburguer.addEventListener('click', aparecer);
 
-        function aparecer() {
-            if (itens_menu.style.display == 'block') {
-                itens_menu.classList.remove('show');
-            } else {
-                itens_menu.classList.toggle('show');
+            function aparecer() {
+                if (itens_menu.style.display == 'block') {
+                    itens_menu.classList.remove('show');
+                } else {
+                    itens_menu.classList.toggle('show');
+                }
             }
-        }
 
-        var page = $("html, body");
-        var animationDuration = 1000;
-        $('.scrollSuave').click(function () {
-            page.animate({
-                scrollTop: $($.attr(this, 'href')).offset().top
-            }, animationDuration);
-            return false;
-        });
+            var page = $("html, body");
+            var animationDuration = 1000;
+            $('.scrollSuave').click(function () {
+                page.animate({
+                    scrollTop: $($.attr(this, 'href')).offset().top
+                }, animationDuration);
+                return false;
+            });
 
-    </script>
+            // const backToTopButton = document.querySelector('.back-to-top')
+
+            // const backToTop = () => {
+            //     if (window.scrollY >= 100) {
+            //         backToTopButton.classList.add('show')
+            //     } else {
+            //         backToTopButton.classList.remove('show')
+            //     }
+            // }
+
+            // window.addEventListener('scroll', function () {
+            //     backToTop()
+            // })
+
+        </script>
 
 </body>
 

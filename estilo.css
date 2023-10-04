@@ -99,7 +99,8 @@ h2 {
     display: flex;
     align-items: center;
     justify-content: center;
-    /* height: 100vh; fez ficar muito afastado do menu*/
+    /* height: 100vh;*/
+    /* fez ficar muito afastado do menu */
 }
 
 .div_foto img {
@@ -124,7 +125,7 @@ h2 {
     text-align: center;
 }
 
-.card-body a{
+.card-body a {
     margin: 0 15px;
 }
 
@@ -136,7 +137,6 @@ h2 {
 }
 
 /* Ajuste dos botões dos cards*/
-
 .card-body a {
     text-decoration: none;
     background-color: var(--cor-principal);
@@ -174,77 +174,12 @@ h2 {
     display: none;
 }
 
-/* 
-.row{
-    align-items: center;
-}
 
-.card:hover {
-    transform: scale(1.1);
-    transition: transform 0.5s ease-in-out;
-}
-
-.card {
-    transform: scale(1);
-    transition: transform 0.5s ease-in-out;
-}
-.card-body{
-    text-align: justify;
-    gap: 10em;
-}
-
-/* .card-body a {
-    text-decoration: none;
-    background-color: var(--cor-fundo);
-    color: var(--cor-principal);
-    border:var(--cor-fundo)
-    font: bold;
-}
-
-.card-body a:hover {
-    background-color: var(--cor-principal);
-    color: #000000;
-    font: bold;
-}
-
-
-.video_botao {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    align-content: center;
-    margin: 2em;
-    padding: .35em;
-    background-color: rgb(241, 110, 198);
-    border-radius: 8px;
-    text-decoration: none;
-    color: #ffffff;
-    text-transform: uppercase;
-}
-
-.video_botao:hover {
-    background-color: color-mix(in srgb, var(--cor-site), #ffffff 20%);
-}
-
-.div_video {
-    display: none;
-}
-
-.credito_imagem {
-    font-size: .5em;
-}
-
-.div_foto {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    /* gap: 2em; */
-/* margin-bottom: 2em;
-} */
-
+/* Fazendo o Formulário */
 form {
     max-width: 400px;
-    margin: 0 auto;
+    margin: 20px auto;
+    /* background-color: #636062; */
 }
 
 label,
@@ -312,8 +247,9 @@ button {
         background-color: #a02b77;
     }
 
-    #sobre {
+    #sobre div {
         display: inline-block;
+
         /* display: flex;
         justify-content: flex-start; */
     }
@@ -332,18 +268,34 @@ button {
         align-items: center;
     }
 
-
 }
 
-.Whatsapp {
+/* Botão de voltar ao Topo */
+.back-to-top {
+    background: #fff;
+    cursor: pointer;
     position: fixed;
-    bottom: 20px;
-    right: 20px;
-    z-index: 9999;
+    right: 1rem;
+    bottom: 1rem;
+    line-height: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s;
+    transform: translateY(100%);
 }
 
+.back-to-top.show {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+
+/* Ajustes do footer */
 footer {
-    background-color: #f16ec6;
+    background-color: var(--cor-principal);
+    margin: 0;
     padding: 1em;
     text-align: center;
 }
@@ -356,6 +308,10 @@ footer {
 
 .tamanho {
     width: 2em;
+}
+
+.credito_imagem {
+    font-size: 0.3em;
 }
 
 .texto_footer {
@@ -377,5 +333,3 @@ footer {
     }
 
 }
-
-#057d92
