@@ -9,13 +9,14 @@
     margin: 0;
     padding: 0;
     font-family: sans-serif;
-    color: #ffffff;
+    color: #000000;
     box-sizing: border-box;
 }
 
 body {
-    background-image: url(imagens/vista-panoramica-do-por-do-sol-a-noite.jpg);
-    background-repeat: repeat;
+    /* background-image: url(imagens/vista-panoramica-do-por-do-sol-a-noite.jpg);
+    background-repeat: repeat; */
+
 }
 
 /* Ajustar as sections no site */
@@ -24,7 +25,7 @@ main {
     flex-direction: column;
     align-items: center;
     text-align: justify;
-    gap: 5em;
+    gap: 1em;
     margin: .8em;
     padding: 1.2em;
 }
@@ -33,7 +34,6 @@ h3 {
     display: block;
     text-align: center;
     text-transform: uppercase;
-    /* color: #f16ec6; */
     background-color: var(--cor-principal);
     border-radius: 1em;
 }
@@ -50,6 +50,7 @@ h3 {
     width: 4em;
     height: auto;
 }
+
 
 #hamburguer {
     background-color: #f16ec6;
@@ -98,22 +99,14 @@ ul {
 
 
 /* Ajuste das imagens de perfil */
-.div_foto {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100vh;
-    height: auto;
-
-    /* fez ficar muito afastado do menu */
-}
-
-.div_foto img {
+.icon_foto {
+    margin-bottom: 2em;
     width: 15em;
     height: auto;
     border-radius: 20%;
     box-shadow: 0 0 15px #057d92;
 }
+
 
 /* Ajustes dos Cards - Section - Projetos */
 .card:hover {
@@ -252,47 +245,62 @@ button {
         background-color: #a02b77;
     }
 
-    #sobre div {
-        display: inline-block;
-
-        /* display: flex;
-        justify-content: flex-start; */
+    /* Ajuste das imagens de perfil */
+    .div_foto img {
+        float: left;
+        width: 10em;
+        height: auto;
+        border-radius: 20%;
+        box-shadow: 0 0 15px #057d92;
     }
 
-    .div_card {
-        width: calc(100% / 3 - 4em);
+    .div_foto p {
+        padding-left: 15em;
     }
 
-    .video_botao {
-        display: none;
-    }
-
-    .div_video {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-}
-
-/* Botão de voltar ao Topo */
-/* .back-to-top {
-    background: #fff;
-    cursor: pointer;
+    /* Botão de voltar ao Topo */
+a[href="#top"] {
     position: fixed;
-    right: 1rem;
-    bottom: 1rem;
-    line-height: 0;
-    visibility: hidden;
-    opacity: 0;
-    transition: 0.3s;
-    transform: translateY(100%);
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+    background-color: #ffffff;
+    border-radius: 50%;
 }
 
-.back-to-top.show {
-    visibility: visible;
-    opacity: 1;
-    transform: translateY(0);
+a[href="#top"]:hover {
+    opacity: .8;
+}
+
+}
+
+.div_card {
+    width: calc(100% / 3 - 4em);
+}
+
+.video_botao {
+    display: none;
+}
+
+.div_video {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* Botão de voltar ao Topo
+a[href="#top"] {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+    background-color: #ffffff;
+    border-radius: 50%;
+}
+
+a[href="#top"]:hover {
+    opacity: .8;
 } */
 
 
@@ -314,7 +322,7 @@ footer {
     width: 2em;
 }
 
-.credito_imagem a {
+.credito_imagem {
     font-size: 0.4em;
     text-decoration: none;
 }
