@@ -259,14 +259,15 @@ a[href="#top"] {
     /* Ajuste das imagens de perfil */
     .div_foto img {
         float: left;
-        width: 10em;
+        width: 15em;
         height: auto;
         border-radius: 20%;
         box-shadow: 0 0 15px #057d92;
+        margin-bottom: -15px;
     }
 
     .div_foto p {
-        padding-left: 15em;
+        padding-left: 30em;
     }
 
     /* Botão de voltar ao Topo */
