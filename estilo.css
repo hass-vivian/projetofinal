@@ -13,30 +13,36 @@
     box-sizing: border-box;
 }
 
-body {
-    /* background-image: url(imagens/vista-panoramica-do-por-do-sol-a-noite.jpg);
-    background-repeat: repeat; */
-
-}
 
 /* Ajustar as sections no site */
 main {
+    background-color: #9c9c9c;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: justify;
-    gap: 1em;
-    margin: .8em;
-    padding: 1.2em;
+
 }
 
+/* Ajustar as itens da sections no site */
 h3 {
     display: block;
     text-align: center;
     text-transform: uppercase;
     background-color: var(--cor-principal);
     border-radius: 1em;
+    margin: .8em;
+    padding: .3em;
 }
+
+main p {
+    margin: 1em;
+}
+
+main section{
+    margin: 1em;
+}
+
 
 /* Cabeçalho Menu */
 .header {
@@ -47,18 +53,15 @@ h3 {
 }
 
 .header_logo {
-    width: 4em;
+    width: 6em;
     height: auto;
 }
-
 
 #hamburguer {
     background-color: #f16ec6;
     color: #0D0D0D;
     display: block;
     text-align: center;
-    /* para o menu iniciar no centro*/
-    padding: 0;
     cursor: pointer;
     font-size: 2em;
 }
@@ -96,11 +99,13 @@ ul {
     color: #ffffff;
 }
 
-
+#sobre {
+    margin-top: 1em;
+}
 
 /* Ajuste das imagens de perfil */
 .icon_foto {
-    margin-bottom: 2em;
+    margin-bottom: 3em;
     width: 15em;
     height: auto;
     border-radius: 20%;
@@ -129,7 +134,7 @@ ul {
 
 .card-img-top {
     height: 200px;
-    /* Definir a altura da iamgem do card */
+    /* Definir a altura da imagem do card */
     object-fit: cover;
     /* Para evitar distorção da imagem */
 }
@@ -176,7 +181,8 @@ ul {
 /* Fazendo o Formulário */
 form {
     max-width: 400px;
-    margin: 20px auto;
+    margin: 50px auto;
+    font: bold;
     /* background-color: #636062; */
 }
 
@@ -199,6 +205,11 @@ button {
     color: var(--cor-fundo);
     border-color: var(--cor-principal);
     cursor: pointer;
+}
+
+/* Ocultar o Botão de voltar ao Topo */
+a[href="#top"] {
+    display: none;
 }
 
 
@@ -259,58 +270,58 @@ button {
     }
 
     /* Botão de voltar ao Topo */
-a[href="#top"] {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    z-index: 9999;
-    background-color: #ffffff;
-    border-radius: 50%;
+    a[href="#top"] {
+        display: block;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        z-index: 9999;
+        background-color: #ffffff;
+        border-radius: 50%;
+    }
+
+    a[href="#top"]:hover {
+        opacity: .8;
+    }
+
+    .trailer_botao {
+        display: none;
+    }
+
+    .trailer_video {
+        display: block;
+        block-size: 35em 19, 68em;
+    }
+
+    .div_video .video_tamanho {
+        border-radius: .8em;
+        margin-bottom: 1em;
+    }
+
+    #sobre {
+        padding: 3em;
+    }
+
 }
 
-a[href="#top"]:hover {
-    opacity: .8;
-}
 
-}
 
 .div_card {
     width: calc(100% / 3 - 4em);
 }
 
-.video_botao {
-    display: none;
-}
-
-.div_video {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-
-/* Botão de voltar ao Topo
-a[href="#top"] {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    z-index: 9999;
-    background-color: #ffffff;
-    border-radius: 50%;
-}
-
-a[href="#top"]:hover {
-    opacity: .8;
-} */
-
-
-
 /* Ajustes do footer */
 footer {
     background-color: #f16ec6;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    /* altura do rodapé */
     padding: 1em;
     text-align: center;
 }
+
 
 .logos_footer {
     display: flex;
@@ -331,7 +342,7 @@ footer {
     font-size: 0.6em;
     text-transform: uppercase;
     letter-spacing: 0.15em;
-    margin: 0;
+    /* margin: 0; */
     padding-top: .8rem;
     color: #0D0D0D;
 }
@@ -342,7 +353,6 @@ footer {
     .logos_footer {
         flex-direction: row;
         justify-content: center;
-        gap: 1.5em;
     }
 
 }
