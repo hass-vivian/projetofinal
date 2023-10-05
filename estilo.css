@@ -284,11 +284,11 @@ a[href="#top"] {
         opacity: .8;
     }
 
-    .trailer_botao {
+    .video_botao {
         display: none;
     }
 
-    .trailer_video {
+    .div_video {
         display: block;
         block-size: 35em 19, 68em;
     }
